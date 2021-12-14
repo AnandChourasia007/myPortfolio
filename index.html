@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Hey! It's me.
+        </title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+	<nav>
+        <div class="topnav" id="myTopNav">
+        <a href="#Work">
+            Work
+        </a>
+        <a href="#Capabilities">
+            Capabilities
+        </a>
+        <a href="#Timeline">
+            Timeline
+        </a>
+        <a href="#Contact">
+            Contact
+        </a>
+        <a href="javascript:void(0);" class="dropdown" onclick="menuOpen()">
+        &#9776
+        </a>
+        <p>
+            Anand Chourasia
+        </p>
+        </div>
+	</nav>
+        <div class="intro">
+            <h2 class="FirstLine">
+                Hey there! I am Anand, a sophomore computer science undergrad who has just started delving into the awesome realm of web development and other technical skills.
+            </h2>
+        </div>
+        <div class="work" id="Work">
+            <h3>Work</h3>
+                <div class="project">
+                    <h4>Project1</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. 
+                    </p>
+                    <p>
+                        GitHub link: <a href="#linkProject1">Github: #linkProject1</a>
+                    </p>
+                </div>
+                <div class="project">
+                    <h4>Project2</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. 
+                    </p>
+                    <p>
+                        GitHub link: <a href="#linkProject2">Github: #linkProject2</a>
+                    </p>
+                </div>
+                <div class="project">
+                    <h4>Project3</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. 
+                    </p>
+                    <p>
+                        GitHub link: <a href="#linkProject3">Github: #linkProject3</a>
+                    </p>
+                </div>
+        </div>
+        <div class="capabilities" id="Capabilities">
+            <!--java, c++, html, css, js, nodejs, bootstrap, SCSS, mongoDB-->
+            <div class="skilltext">
+              <p>Some of the tools I'm familiar with are...</p>
+            </div>
+          <div class="skillimages">
+            <img src="../Images/htmlLogo.png" alt="html logo">
+            <img src="../Images/cssLogo.png" alt="css logo">
+            <img src="../Images/javascriptLogo.png" alt="javascript logo">
+            <img src="../Images/c++Logo.png" alt="c++ logo">
+            <img src="../Images/javaLogo.png" alt="java logo">
+            <img src="../Images/sassLogo.png" alt="sass logo">
+            <img src="../Images/mongoDBLogo.png" alt="mongoDB logo">
+            <img src="../Images/bootstrapLogo.png" alt="bootstrap logo">
+          </div>
+        </div>
+      <div class="superTimeline" id="Timeline">
+        <div class="timelineHeading">
+            <h3>
+                Timeline
+            </h3>
+        </div>
+        <div class="verticalLine">
+            
+            <div class="container left">
+                <div class="content">
+                    <h3>
+                        Date 1
+                    </h3>
+                    <p>
+                        Task1
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>
+                        Date 2
+                    </h3>
+                    <p>
+                        Task2
+                    </p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h3>
+                        Date3
+                    </h3>
+                    <p>
+                        Task3
+                    </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>
+                        Date4
+                    </h3>
+                    <p>
+                        Task4
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="contact" id="Contact">
+          <h3 style="text-align: center; color: white;">You can contact me here!</h3>
+            <a href="https://www.facebook.com/anand.chaurasiya.1485537/"><img src="../Images/fbLogo.png"></a>
+            <a href="mailto:anandchourasia007@gmail.com"><img src="../Images/gmailLogo.png"></a>
+            <a href="https://www.linkedin.com/in/anand-chourasia-826160220"><img src="../Images/linkedinLogo.png"></a>
+            <a href="https://github.com/AnandChourasia007"><img class="gitLogo" src="../Images/githubLogo.png"></a>
+      </div>
+      <script>
+        function menuOpen()
+        {
+          var x=document.getElementById("myTopNav");
+          if(x.className==="topnav")
+            x.className+=" responsive";
+          else
+            x.className="topnav";
+        }
+      </script>
+    </body>
+</html>
