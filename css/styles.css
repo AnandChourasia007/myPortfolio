@@ -1,0 +1,273 @@
+html{
+  scroll-behavior: smooth;
+  background: transparent;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+body{
+  width:100%;
+  height:100%;
+  margin:0;
+  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../Images/coolDarkPlanetDemo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+*{
+  box-sizing: border-box;
+}
+h1{
+  margin-left: 15px;
+  margin-top: 0;
+}
+nav{
+  width:100%;
+  margin: 0;
+  padding: 10px 0;  
+  height: auto;
+  display:block;
+  background-color:rgb(47, 48, 45);
+}
+div.topnav{
+height: auto;
+min-height: 22px;
+}
+nav p{
+  color: white;
+  float: right;
+  margin-top:0;
+  margin-right: 7px;
+  display:block;
+}
+div.topnav a{
+  text-decoration: none;
+  color: rgb(253, 251, 251);
+  min-height:16px;
+  text-align:center;
+  padding: 10px 7px;
+}
+div.topnav a.dropdown{
+  display: none;
+}
+div.topnav a:hover{
+  background:rgb(76, 76, 80);
+  color:rgb(125, 236, 175);
+}
+div.intro{
+  color: white;
+  width: auto;
+  margin: 325px 200px;
+  height: auto;
+}
+div.work{
+  padding: 20px;
+  background-color:rgb(134, 139, 84);
+}
+div.project{ 
+  width:33%;
+  display: inline-block;
+}
+div.capabilities{
+color: white;
+background-image:linear-gradient(to bottom right, rgb(0,0,0,0.6),rgb(0 0 0 / 40%)),url(../Images/lowPolyHorizonDemo.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: auto;
+}
+div.skilltext{
+font-size: 30px;
+color: white;
+width: 35%;
+background: transparent;
+float: left;
+padding: 100px 40px 33px 40px;
+}
+img{
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin:10px;
+  padding: 20px;
+}
+div.skillimages{
+display: inline-block;
+width: 55%;
+padding: 15px;
+background: transparent;
+display: inline-block;
+}
+/*      T I M E L I N E      S T A R T E D     */
+div.timelineHeading {
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+div.superTimeline{
+  background-image:linear-gradient(to bottom right, rgb(0,0,0,0.6),rgba(162, 153, 245, 0.4)),url(../Images/timelineBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+div.verticalLine{
+  
+  color:burlywood;
+  position: relative;
+  margin: 0 ;
+}
+div.verticalLine::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-right: 3px;
+}
+div.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+div.container::after {     /*Circles on the central line*/
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+div.left{
+  left:0;
+}
+div.right{
+  left: 50%;
+}
+.left::before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #485065;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #485065;
+}
+.right::before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #485065;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #485065 transparent transparent;
+}
+.right::after{
+  left: -16px;
+}
+/*       T I M E L I N E    E N D E D     */
+.content{
+  padding: 20px 30px;
+  background-color: transparent;
+  position: relative;
+  border-radius: 6px;
+  border: solid #485065 5px;
+}
+div.contact{
+  padding: 100px 200px;
+  background: linear-gradient(to left, rgb(97, 0, 97), rgb(119, 65, 119));
+}
+div.contact img{
+  margin: 60px;
+}
+/*        R E S P O N S I V E N E S S       */
+@media screen and (max-width: 500px) {
+  div.topnav a {
+      display: none;
+  }
+div.topnav p{
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+div.topnav a.dropdown{
+     display: block;
+     padding: 0px 7px;
+     float: right;
+}
+div.project{
+  width: 100%;
+}
+div.intro{
+  margin: 50% 10%;
+}
+div.topnav.responsive{
+  position: relative;
+}
+div.topnav.responsive a.dropdown{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+div.topnav.responsive a{
+  float: none;
+  display: block;
+  text-align: left;
+}
+div.topnav.responsive p{
+  display: none;
+}
+div.skilltext{
+  padding-top: 50px;
+  width: 100%;
+}
+div.skillimages{
+  width: 100%;
+}
+div.verticalLine::after{
+  left: 31px;
+}
+div.container{
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
+div.container::before{
+  left: 60px;
+  border: medium solid #485065;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #485065 transparent transparent;
+}
+div.left::after, div.right::after {
+  left: 15px;
+}
+div.right{
+  left: 0%;
+}
+div.contact{
+  padding: 17%;
+}
+div.contact img{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+}
+
+/*        R E S P O N S I V E N E S S       */
